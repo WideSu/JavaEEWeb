@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.hqu.vibsignal_analysis.mapper.DataStorageMapper">
+    <sql id="dataStorageColumns">
+        a.uuid AS "UUID",
+        a.data_id AS "dataId",
+        a.user_id AS "userId",
+        a.data_name AS "dataName",
+        a.data_application_range AS "dataApplicationRange",
+        a.data_class AS "dataClass",
+        a.data_index AS "dataIndex",
+        a.upload_date AS "uploadDate"
+    </sql>
+
+    <sql id="dataStorageJoins">
+
+    </sql>
+
+    <select id="findDataIndex" resultType="DataStorage">
+        SELECT
+        <include refid="dataStorageColumns"></include>
+        FROM data_storage a
+        WHERE
+        a.data_id = #{dataId}
+    </select>
+
+    <select id="findDataPath" resultType="java.lang.String">
+        SELECT
+        a.data_index
+        FROM data_storage a
+        WHERE
+        a.data_id = #{dataId} AND a.data_class = #{dataClass}
+    </select>
+
+    <select id="findList" resultType="DataStorage">
+        SELECT
+        <include refid="dataStorageColumns"></include>
+        FROM data_storage a
+        WHERE
+            a.data_id = #{dataId}
+        <if test="dataClass != null and dataClass != ''">
+             AND a.data_class = #{dataClass}
+        </if>
+
+    </select>
+    
+    <insert id="insert">
+		INSERT INTO data_storage(
+		  uuid,
+		  data_id,
+		  user_id,
+		  data_name,
+		  data_application_range,
+		  data_class,
+		  data_index,
+		  upload_date
+		) VALUES (
+		  #{UUID},
+		  #{dataId},
+		  #{userId},
+		  #{dataName},
+		  #{dataApplicationRange},
+		  #{dataClass},
+		  #{dataIndex},
+		  #{uploadDate}
+		)
+	</insert>
+
+    <update id="update" parameterType="DataStorage">
+        UPDATE data_storage a SET
+            a.data_id = #{dataId},
+            a.user_id = #{userId},
+            a.data_name = #{dataName},
+            a.data_application_range = #{dataApplicationRange},
+            a.data_class = #{dataClass},
+            a.data_index = #{dataIndex},
+            a.upload_date = #{uploadDate}
+        WHERE a.data_id = #{dataId} AND a.data_class = #{dataClass}
+    </update>
+
+    <!-- Annie写的 -->
+    <select id="getList" resultType="DataStorage">
+        SELECT DISTINCT
+        <include refid="dataStorageColumns"></include>
+        FROM data_storage a
+        WHERE a.user_id = #{userId}
+        <if test="dataName != null and dataName != ''">
+            AND a.data_name LIKE concat('%',#{dataName},'%')
+        </if>
+        <if test="dataApplicationRange != null and dataApplicationRange != ''">
+            AND a.data_application_range = #{dataApplicationRange}
+        </if>
+        AND (a.data_application_range != '' AND a.data_application_range is not null)
+        ORDER BY a.upload_date DESC
+    </select>
+
+    <update id="updateDataName" parameterType="DataStorage">
+        UPDATE data_storage a SET
+            a.data_name = #{dataName}
+        WHERE a.data_id = #{dataId}
+    </update>
+
+    <delete id="delete">
+    DELETE a
+		FROM  data_storage a
+		WHERE a.data_id = #{dataId}
+		AND a.user_id = #{userId}
+    </delete>
+    
+
+</mapper>

@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="vibsignal_analysis:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62221657-fb49-4007-9350-7f2bb30d91cc" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="vibsignal_analysis" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addExp_LoadPred.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="138" column="59" selection-start-line="138" selection-start-column="59" selection-end-line="138" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addExp_Load.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1271">
+              <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addExp.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="325" column="41" selection-start-line="325" selection-start-column="35" selection-end-line="325" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/GetMultipleImageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
+              <folding>
+                <element signature="e#3127#3135#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="MybatisMapper" />
+        <option value="Jsp File" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+    <option name="SCHEME" value="Project" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>knownLoadFile</find>
+      <find>查看结果图</find>
+      <find>玩命</find>
+      <find>/user/check</find>
+      <find>user/check</find>
+      <find>updateByPrimaryKeySelective</find>
+      <find>getUser</find>
+      <find>user/update</find>
+      <find>上传</find>
+      <find>buttonsave</find>
+      <find>validDateFile</find>
+      <find>knownPointFile</find>
+      <find>validda</find>
+      <find>试验结果图</find>
+      <find>dialog</find>
+      <find>700</find>
+      <find>img</find>
+      <find>result</find>
+      <find>buttonSave</find>
+      <find>loadingdiv</find>
+      <find>ready</find>
+      <find>imageTitle</find>
+      <find>hasResult</find>
+      <find>resultpic</find>
+      <find>选择上传文件</find>
+      <find>20p</find>
+      <find>20px</find>
+      <find>LR_grid</find>
+      <find>resultPic</find>
+      <find>LRP_grid</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>vibsignal_analysis</replace>
+      <replace>production_ms</replace>
+      <replace>experiment.expId</replace>
+      <replace />
+      <replace>uText</replace>
+      <replace>knownLoad</replace>
+      <replace>knownresponse</replace>
+      <replace>image</replace>
+      <replace>ctx</replace>
+      <replace>&lt;a href=&quot;####&quot;</replace>
+      <replace>href=&quot;####&quot;</replace>
+      <replace>=</replace>
+      <replace>&amp;</replace>
+      <replace>javascript:void(0)</replace>
+      <replace>href=&quot;javascript:void(0)&quot;</replace>
+      <replace>margin-left:16%</replace>
+      <replace>试验</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\vibsignal_analysis</dir>
+      <dir>C:\Users\Ricky Zhang\.m2\repository\org\apache\shiro\shiro-web\1.2.3\shiro-web-1.2.3.jar!\org\apache\shiro\web\mgt</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/tSCorAnalysisVDSI.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/websocket/MyWebSocketHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/SocketMessageHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/mapper/DataStorageMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/Session/HandlerInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/Session/SessionHandlerInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/serverInfo.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/Session/SystemSessionInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/FileRecieveController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/DataStorageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/LR_Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/ExperimentParamController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/service/ExperimentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/mapper/ExperimentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/mapper/ExperimentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/maintenance/experiment_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/maintenance/dataStor_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/ExperimentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/service/AuthorizationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/Session/SessionFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/maintenance/expParam_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/springmvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery-easyui-1.7.0/jquery.easyui.min.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/server/base-loading.js" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/FirstController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/maintenance/currentUser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/AlgorithmHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/service/ExpResultService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/GetImageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/styleExp.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/server/globe.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addKLPExp.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addKLPMExp.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addRealExp.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/tSCorAnalysisPos.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/tSCorAnalysisNeg.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/negative/tSCorAnalysisDPos.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/negative/tSCorAnalysisDNeg.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addExp.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addExp_Load.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addExp_LoadPred.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/GetMultipleImageController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="vibsignal_analysis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vibsignal_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vibsignal_analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vibsignal_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vibsignal_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vibsignal_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vibsignal_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vibsignal_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vibsignal_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vibsignal_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vibsignal_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vibsignal_analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vibsignal_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vibsignal_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vibsignal_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="style.css&#9;FILE&#9;file://D:/vibsignal_analysis0508/vibsignal_analysis/src/main/webapp/WEB-INF/css/style.css&#10;zh&#9;FILE&#9;file://D:/vibsignal_analysis0508/vibsignal_analysis/src/main/webapp/WEB-INF/js/jquery-easyui-1.7.0/locale/easyui-lang-zh_CN.js&#10;easyui-lang-zh_CN.js&#9;FILE&#9;file://D:/vibsignal_analysis0508/vibsignal_analysis/src/main/webapp/WEB-INF/js/jquery-easyui-1.7.0/locale/easyui-lang-zh_CN.js&#10;c.tld&#9;FILE&#9;jar://C:/Users/Ricky Zhang/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar!/META-INF/c.tld&#10;easyui.css&#9;FILE&#9;file://H:/vibsignal_analysis/src/main/webapp/WEB-INF/js/jquery-easyui-1.7.0/themes/default/easyui.css&#10;easyuicss&#9;FILE&#9;file://H:/vibsignal_analysis/src/main/webapp/WEB-INF/js/jquery-easyui-1.7.0/themes/black/easyui.css" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.hqu.vibsignal_analysis.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\vibsignal_analysis0508\vibsignal_analysis\src\main\webapp\WEB-INF\image" />
+      <recent name="D:\vibsignal_analysis0508\vibsignal_analysis\src\main\webapp\WEB-INF\js\server" />
+      <recent name="D:\vibsignal_analysis0508\vibsignal_analysis\src\main\webapp\WEB-INF\jsp\maintenance" />
+      <recent name="D:\vibsignal_analysis0508\vibsignal_analysis\src\main\java\org\hqu\vibsignal_analysis\util\Session" />
+      <recent name="D:\vibsignal_analysis0508\vibsignal_analysis\src\main\resources\spring" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.hqu.vibsignal_analysis.controller" />
+      <recent name="org.hqu.vibsignal_analysis.util" />
+      <recent name="org.hqu.vibsignal_analysis.service" />
+      <recent name="org.hqu.vibsignal_analysis.service.impl" />
+      <recent name="org.hqu.vibsignal_analysis.util.algorithm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\vibsignal_analysis0508\vibsignal_analysis\src\main\webapp\WEB-INF\image" />
+      <recent name="H:\vibsignal_analysis0508\vibsignal_analysis\src\main\webapp\WEB-INF\jsp\clustering\negative" />
+      <recent name="H:\vibsignal_analysis0504\src\main\webapp\WEB-INF\jsp\clustering" />
+      <recent name="H:\vibsignal_analysis0504\src\main\webapp\WEB-INF\jsp" />
+      <recent name="H:\vibsignal_analysis\src\main\webapp\WEB-INF\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.VSA">
+    <configuration name="VDSI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.hqu.vibsignal_analysis.util.algorithm.VDSI" />
+      <module name="vibsignal_analysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hqu.vibsignal_analysis.util.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HCtest.getIP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vibsignal_analysis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HCtest" />
+      <option name="METHOD_NAME" value="getIP" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HCtest.getServerIp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vibsignal_analysis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HCtest" />
+      <option name="METHOD_NAME" value="getServerIp" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HCtest.runAlgorithms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vibsignal_analysis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HCtest" />
+      <option name="METHOD_NAME" value="runAlgorithms" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VSA" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/vibsignal_analysis/" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <deployment>
+        <artifact name="vibsignal_analysis:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/vibsignal_analysis" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_vibsignal_analysis" />
+        <option name="JNDI_PORT" value="1098" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63714" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="vibsignal_analysis:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="addKLPMExp.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.85" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/jsp/addKLPMExp.jsp" />
+      <deployment>
+        <artifact name="vibsignal_analysis:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="addKLPMExp_jsp_vibsignal_analysis" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59237" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="vibsignal_analysis:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.VDSI" />
+      <item itemvalue="JUnit.HCtest.runAlgorithms" />
+      <item itemvalue="JUnit.HCtest.getIP" />
+      <item itemvalue="JUnit.HCtest.getServerIp" />
+      <item itemvalue="Tomcat Server.VSA" />
+      <item itemvalue="Tomcat Server.addKLPMExp.jsp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HCtest.getServerIp" />
+        <item itemvalue="JUnit.HCtest.runAlgorithms" />
+        <item itemvalue="JUnit.HCtest.getIP" />
+        <item itemvalue="Application.VDSI" />
+        <item itemvalue="Tomcat Server.addKLPMExp.jsp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62221657-fb49-4007-9350-7f2bb30d91cc" name="Default" comment="" />
+      <created>1551080252864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551080252864</updated>
+      <workItem from="1551080257428" duration="1998000" />
+      <workItem from="1551083289585" duration="8304000" />
+      <workItem from="1551098900301" duration="2828000" />
+      <workItem from="1551102012921" duration="18190000" />
+      <workItem from="1551431843270" duration="20169000" />
+      <workItem from="1551516226619" duration="30701000" />
+      <workItem from="1551665659517" duration="93476000" />
+      <workItem from="1552007436009" duration="1196000" />
+      <workItem from="1552035578952" duration="652000" />
+      <workItem from="1552102510713" duration="141124000" />
+      <workItem from="1552870101565" duration="83214000" />
+      <workItem from="1553222050772" duration="14427000" />
+      <workItem from="1553304685709" duration="42984000" />
+      <workItem from="1553509830845" duration="11411000" />
+      <workItem from="1553675290346" duration="711000" />
+      <workItem from="1553951825655" duration="5801000" />
+      <workItem from="1554089284707" duration="63468000" />
+      <workItem from="1554426559552" duration="98247000" />
+      <workItem from="1554901656384" duration="3882000" />
+      <workItem from="1555053064890" duration="53445000" />
+      <workItem from="1555581455578" duration="10174000" />
+      <workItem from="1555643058815" duration="3180000" />
+      <workItem from="1555657930350" duration="18959000" />
+      <workItem from="1556345134965" duration="25154000" />
+      <workItem from="1556441071036" duration="22663000" />
+      <workItem from="1556521979493" duration="3013000" />
+      <workItem from="1556600060764" duration="4622000" />
+      <workItem from="1556973537650" duration="64482000" />
+      <workItem from="1557229262491" duration="4534000" />
+      <workItem from="1557234120820" duration="911000" />
+      <workItem from="1557235458475" duration="12310000" />
+      <workItem from="1557725984930" duration="31504000" />
+      <workItem from="1557840259443" duration="23516000" />
+      <workItem from="1558054846865" duration="5010000" />
+      <workItem from="1558081590104" duration="948000" />
+      <workItem from="1558086849907" duration="25741000" />
+      <workItem from="1558240532672" duration="770000" />
+      <workItem from="1558245919894" duration="26347000" />
+      <workItem from="1558315328784" duration="39134000" />
+      <workItem from="1558526649583" duration="342000" />
+      <workItem from="1558527223369" duration="80762000" />
+      <workItem from="1558773812210" duration="67816000" />
+      <workItem from="1559029351704" duration="20609000" />
+      <workItem from="1559104341813" duration="38000" />
+      <workItem from="1559121673044" duration="2014000" />
+      <workItem from="1559126757975" duration="167798000" />
+      <workItem from="1559879989129" duration="55265000" />
+      <workItem from="1560237963461" duration="710000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 13h 12m 58s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 13h 13m 40s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 13h 17m 56s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 13h 19m 46s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 13h 20m 17s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 13h 22m 15s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 13h 22m 56s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 14h 05m 10s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 14h 11m 01s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HCtest_getServerIp - 2019.05.18 at 14h 34m 41s.xml">
+      <configuration name="HCtest.getServerIp" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1414554000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Structure" order="0" sideWeight="0.11487482" side_tool="true" weight="0.1988273" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.11178248" side_tool="true" weight="0.1988273" />
+      <window_info id="Web" order="5" sideWeight="0.34254992" side_tool="true" weight="0.2782516" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.88512516" visible="true" weight="0.20095949" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30610022" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" visible="true" weight="0.3529412" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28213507" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3017429" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32943678" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50159913" side_tool="true" weight="0.49782136" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.34204793" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>list</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="92" column="9" lean-forward="true" selection-start-line="50" selection-end-line="92" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/ClusterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/DataStorageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/algorithm/Cluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="29" column="12" lean-forward="true" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/algorithm/DataPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="21" column="28" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/algorithm/DensityClusteringPos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="23" column="61" selection-end-line="435" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/algorithm/DensityClusteringNeg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="22" column="31" lean-forward="true" selection-end-line="435" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/algorithm/VDSI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="47" lean-forward="true" selection-end-line="289" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/algorithm/HierarchicalClusteringPos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="62" lean-forward="true" selection-end-line="447" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/algorithm/HierachicalClusteringNeg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="17" lean-forward="true" selection-end-line="446" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/date.format.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="89" column="50" lean-forward="true" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/WebSocketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/ExperimentParamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/LR_Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-656">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/GetDataListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1817">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#2450#2451#0" expanded="true" />
+            <element signature="e#2510#2511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/maintenance/currentUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="109" column="29" lean-forward="true" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/expConfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery-easyui-1.7.0/plugins/jquery.dialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="35" column="86" lean-forward="true" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="226" selection-start-line="226" selection-end-line="226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/mapper/ExpResultMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/service/ExpResultService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="107" column="52" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/util/AlgorithmHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1617">
+          <caret line="90" column="55" selection-start-line="90" selection-start-column="55" selection-end-line="90" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/FirstController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="275" column="57" selection-start-line="275" selection-start-column="57" selection-end-line="275" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/server/serverinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/ExperimentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-733">
+          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/tSCorAnalysisVDSI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="89" selection-start-line="89" selection-end-line="97" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/styleExp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="87" column="15" lean-forward="true" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/server/globe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addRealExp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18480">
+          <caret line="560" column="65" selection-start-line="560" selection-start-column="65" selection-end-line="560" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/tSCorAnalysisPos.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17061">
+          <caret line="517" column="9" selection-start-line="517" selection-start-column="9" selection-end-line="517" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/tSCorAnalysisNeg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16962">
+          <caret line="514" column="18" selection-start-line="514" selection-start-column="18" selection-end-line="514" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/negative/tSCorAnalysisDPos.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16962">
+          <caret line="514" column="23" selection-start-line="514" selection-start-column="23" selection-end-line="514" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addKLPExp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18447">
+          <caret line="559" column="18" selection-start-line="559" selection-start-column="18" selection-end-line="559" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/clustering/negative/tSCorAnalysisDNeg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16830">
+          <caret line="510" column="41" selection-start-line="510" selection-start-column="41" selection-end-line="510" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addKLPMExp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="527" column="23" selection-start-line="527" selection-start-column="23" selection-end-line="527" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addExp_Load.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1271">
+          <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addExp_LoadPred.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="138" column="59" selection-start-line="138" selection-start-column="59" selection-end-line="138" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/GetImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addExp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="325" column="41" selection-start-line="325" selection-start-column="35" selection-end-line="325" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/TextDownController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hqu/vibsignal_analysis/controller/GetMultipleImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
+          <folding>
+            <element signature="e#3127#3135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>vibsignal_analysis</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>vibsignal_analysis</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="vibsignal_analysis:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>vibsignal_analysis</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="vibsignal_analysis.war">
+      <element id="artifact" artifact-name="vibsignal_analysis:war exploded" />
+    </root>
+  </artifact>
+</component>

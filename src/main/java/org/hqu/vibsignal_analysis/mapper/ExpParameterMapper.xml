@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.hqu.vibsignal_analysis.mapper.ExpParameterMapper">
+    <sql id="expParameterColumns">
+        a.uuid AS "UUID",
+        a.exp_id AS "experiment.expId",
+        a.feature_name AS "featureName",
+        a.feature_value AS "featureValue",
+        a.del_flag AS "delFlag"
+    </sql>
+
+
+    <sql id="expParameterJoins">
+
+    </sql>
+
+    <select id="findExpParameterList" resultType="ExpParameter">
+        SELECT
+        <include refid="expParameterColumns"></include>
+        FROM exp_parameter a
+        <include refid="expParameterJoins"></include>
+        WHERE
+        1=1
+        <if test="experiment.expId != null and experiment.expId != ''">
+            AND a.exp_id = #{experiment.expId}
+        </if>
+    </select>
+
+    <select id="findExpParameterMap" resultType="java.util.Map">
+        SELECT
+        a.feature_name,
+        a.feature_value
+        FROM exp_parameter a
+        <include refid="expParameterJoins"></include>
+        WHERE
+        1=1
+        <if test="experiment.expId != null and experiment.expId != ''">
+            AND a.exp_id = #{experiment.expId}
+        </if>
+    </select>
+
+    <insert id="insert">
+		INSERT INTO exp_parameter(
+		  uuid,
+		  exp_id,
+		  feature_name,
+		  feature_value,
+		  del_flag
+		) VALUES (
+		  #{UUID},
+		  #{experiment.expId},
+		  #{featureName},
+		  #{featureValue},
+		  #{delFlag}
+		)
+    </insert>
+
+
+    <insert id="insertInMap" parameterType="java.util.Map">
+            INSERT INTO exp_parameter(
+                uuid,
+                exp_id,
+                feature_name,
+                feature_value,
+                del_flag
+            ) VALUES
+        <foreach collection="map" index="key" item="value" separator=",">
+            (
+                #{expParameter.UUID},
+                #{expParameter.experiment.expId},
+                #{key},
+                #{value},
+                #{expParameter.delFlag}
+            )
+        </foreach>
+	</insert>
+
+    <update id="updateInMap" parameterType="java.util.Map">
+        <foreach collection="map.entrySet()" index="key" item="value" separator=";">
+            UPDATE exp_parameter SET
+            <if test="value!=null and value!=''">
+              feature_value = #{value}
+            </if>
+            WHERE exp_id = #{expParameter.experiment.expId} AND feature_name = #{key}
+        </foreach>
+    </update>
+
+    <update id="update" parameterType="ExpParameter">
+        UPDATE exp_parameter SET
+            exp_id = #{experiment.expId},
+            feature_name = #{featureName},
+            feature_value = #{featureValue},
+            del_flag = #{delFlag}
+        WHERE exp_id = #{experiment.expId} AND feature_name = #{featureName}
+    </update>
+
+
+</mapper>

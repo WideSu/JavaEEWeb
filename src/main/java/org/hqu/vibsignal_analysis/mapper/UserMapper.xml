@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.hqu.vibsignal_analysis.mapper.UserMapper">
+    <sql id="userColumns">
+        a.user_id AS "userId",
+        a.user_name AS "userName",
+        a.user_password AS "userPassword",
+        a.user_state AS "userState"
+    </sql>
+
+    <sql id="userJoins">
+
+    </sql>
+
+    <select id="getUser" resultType="User">
+        SELECT
+        <include refid="userColumns"></include>
+        FROM user a
+        <include refid="userJoins"></include>
+        WHERE
+        1=1
+        <if test="userId != null and userId != ''">
+            AND BINARY a.user_id = #{userId}
+        </if>
+        <if test="userName != null and userName != ''">
+            AND BINARY a.user_name = #{userName}
+        </if>
+        <if test="userPassword != null and userPassword != ''">
+            AND BINARY a.user_password = #{userPassword}
+        </if>
+    </select>
+
+<select id="getUserList" resultType="User">
+    SELECT
+    <include refid="userColumns"></include>
+    FROM user a
+    <include refid="userJoins"></include>
+    WHERE
+    1=1
+    <if test="userId != null and userId != ''">
+        AND BINARY a.user_id = #{userId}
+    </if>
+    <if test="userName != null and userName != ''">
+        AND BINARY a.user_name = #{userName}
+    </if>
+    <if test="userPassword != null and userPassword != ''">
+        AND BINARY a.user_password = #{userPassword}
+    </if>
+</select>
+
+<select id="getUserListwithoutSelf" resultType="User">
+    SELECT
+    <include refid="userColumns"></include>
+    FROM user a
+    <include refid="userJoins"></include>
+    WHERE
+      BINARY a.user_id != #{userId}
+</select>
+    
+    <insert id="insert">
+        INSERT INTO `user`(
+		  user_id,
+		  user_name,
+		  user_password,
+		  user_state
+		) VALUES (
+		  #{userId},
+		  #{userName},
+		  #{userPassword},
+		  #{userState}
+		)
+    </insert>
+
+    <sql id="Base_Column_List">
+    user_id, user_name, user_password, user_state
+    </sql>
+
+    <!-- 本工程唯一使用的方法 -->
+    <update id="updateByPrimaryKeySelective" parameterType="org.hqu.vibsignal_analysis.mapper.entity.User">
+        update user
+        <set>
+            <if test="userName != null">
+                user_name = #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="userPassword != null">
+                user_password = #{userPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="userState != null">
+                user_state = #{userState,jdbcType=CHAR},
+            </if>
+        </set>
+        where user_id = #{userId,jdbcType=VARCHAR}
+    </update>
+
+</mapper>

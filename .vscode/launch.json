@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - VDSI",
+            "request": "launch",
+            "mainClass": "org.hqu.vibsignal_analysis.util.algorithm.VDSI",
+            "projectName": "vibsignal_analysis"
+        }
+    ]
+}

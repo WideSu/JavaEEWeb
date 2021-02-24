@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.hqu.vibsignal_analysis.mapper.ExpResultMapper">
+    <sql id="expResultColumns">
+        a.exp_result_id AS "expResultId",
+        a.exp_id AS "experiment.expId",
+        a.result_index AS "resultIndex",
+        a.result_meaning AS "resultMeaning",
+        a.result_create_date AS "resultCreateDate",
+        a.result_data_type AS "resultDataType",
+        a.del_flag AS "delFlag"
+    </sql>
+
+    <sql id="expResultJoins">
+
+    </sql>
+
+    <select id="findExpResultList" resultType="ExpResult">
+        SELECT
+        <include refid="expResultColumns"></include>
+        FROM exp_result a
+        <include refid="expResultJoins"></include>
+        WHERE
+        1=1
+        <if test="experiment.expId != null and experiment.expId != ''">
+            AND a.exp_id = #{experiment.expId}
+        </if>
+        <if test="resultDataType != null and resultDataType != ''">
+            AND a.result_data_type = #{resultDataType}
+        </if>
+    </select>
+
+    <insert id="insert">
+        INSERT INTO exp_result(
+            exp_result_id,
+            exp_id,
+            result_index,
+            result_meaning,
+            result_create_date,
+            result_data_type,
+            del_flag
+        )VALUES(
+            #{expResultId},
+            #{experiment.expId},
+            #{resultIndex},
+            #{resultMeaning},
+            #{resultCreateDate},
+            #{resultDataType},
+            #{delFlag}
+        )
+    </insert>
+
+    <update id="update" parameterType="ExpResult">
+        UPDATE exp_result SET
+            exp_id = #{experiment.expId},
+            result_index = #{resultIndex},
+            result_meaning = #{resultMeaning},
+            result_data_type = #{resultDataType},
+            result_create_date = #{resultCreateDate},
+            del_flag = #{delFlag}
+        WHERE
+            exp_id = #{experiment.expId} AND result_data_type = #{resultDataType}
+    </update>
+    
+    <!-- 寻找data不为空的那一个exp -->
+    <select id="findExpResultData" resultType="ExpResult">
+        SELECT
+        <include refid="expResultColumns"></include>
+        FROM exp_result a
+        <include refid="expResultJoins"></include>
+        WHERE
+        1=1
+        <if test="experiment.expId != null and experiment.expId != ''">
+            AND a.exp_id = #{experiment.expId}
+        </if>
+            AND a.result_data_type = '2'
+    </select>
+    
+    <select id="findExpResultByResultId" resultType="ExpResult" parameterType="ExpResult">
+		SELECT
+        <include refid="expResultColumns"></include>
+        FROM exp_result a
+        WHERE
+        	1=1
+        <if test="expResultId != null and expResultId != ''">
+            AND a.exp_result_id = #{expResultId}
+        </if>
+        <if test="resultDataType != null and resultDataType != ''">
+            AND a.result_data_type = #{resultDataType}
+        </if>
+	</select>
+	
+	<select id="findURLbyexpId" parameterType="String" resultType="String">
+    	select result_index from exp_result 
+    	where 1=1 and exp_id=#{value} and result_data_type in ('1','3')
+    </select>
+
+    <delete id="delete" parameterType="ExpResult">
+        DELETE r FROM exp_result r
+        WHERE r.exp_id = #{experiment.expId}
+    </delete>
+</mapper>

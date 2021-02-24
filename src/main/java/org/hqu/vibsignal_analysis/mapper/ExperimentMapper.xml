@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.hqu.vibsignal_analysis.mapper.ExperimentMapper">
+    <sql id="experimentColumns">
+        a.uuid AS "UUID",
+        a.exp_id AS "expId",
+        a.exp_name AS "expName",
+        a.user_id AS "userId",
+        a.authorized_user_id AS "authorizedUserId",
+        a.exp_class AS "expClass",
+        a.data_id AS "data.dataId",
+        a.data_id AS "dataId",
+        a.exp_create_date AS "expCreateDate",
+        a.exp_update_date AS "expUpdateDate",
+        a.exp_state AS "expState",
+        a.del_flag AS "delFlag"
+    </sql>
+
+    <sql id="experimentJoins">
+		LEFT JOIN exp_parameter param on param.exp_id = a.exp_id
+		LEFT JOIN data_storage data on data.data_id = a.data_id
+    </sql>
+
+    <select id="getExpriment" resultType="Experiment">
+        SELECT
+		DISTINCT
+          <include refid="experimentColumns"></include>
+        FROM experiment a
+          <include refid="experimentJoins"></include>
+        WHERE
+          a.exp_id = #{expId}
+		<if test="authorizedUserId != null and authorizedUserId != ''">
+			AND a.authorized_user_id = #{authorizedUserId}
+		</if>
+		<if test="userId != null and userId != ''">
+			AND a.user_id = #{userId}
+		</if>
+    </select>
+
+	<select id="getUploadedDataList" resultType="UploadedData">
+		SELECT
+		(SELECT data_storage.data_name FROM data_storage WHERE data_storage.data_class = 'Tdata' AND data_storage.data_id = d.data_id) knownPoint,
+		(SELECT data_storage.data_name FROM data_storage WHERE data_storage.data_class = 'Pdata' AND data_storage.data_id = d.data_id) unKnownPoint,
+		d.upload_date uploadDate,
+		p.feature_value p2Predict,
+		d.data_id dataId
+		FROM data_storage d
+		LEFT JOIN experiment e ON e.data_id = d.data_id
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		WHERE (p.feature_name = 'p2Predict' OR e.exp_id is null) AND d.user_id = #{userId}
+		AND d.data_application_range = #{dataApplicationRange}
+		GROUP BY dataId,p2Predict
+		ORDER BY dataId DESC
+	</select>
+
+	<select id="getExpList" resultType="Experiment">
+		SELECT DISTINCT
+		e.uuid AS "UUID",
+		e.exp_id AS "expId",
+		e.exp_name AS "expName",
+		e.exp_update_date AS "expUpdateDate",
+		e.user_id AS "userId",
+		u.user_name AS "userName",
+		e.data_id AS "data.dataId",
+		p.feature_value AS "expParameter.algorithm"
+		FROM experiment e
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		LEFT JOIN user u ON u.user_id = e.user_id
+		WHERE p.feature_name = 'algorithm'
+		<if test="expName != null and expName != ''">
+			AND e.exp_name = #{expName}
+		</if>
+		<if test="expClass != null and expClass != ''">
+			AND e.exp_class = #{expClass}
+		</if>
+		AND (e.user_id = #{userId} AND (e.authorized_user_id is null OR e.authorized_user_id = '')
+			OR e.authorized_user_id = #{userId})
+
+		ORDER BY e.exp_update_date DESC
+	</select>
+
+	<select id="getCreatedExpList" resultType="Experiment">
+		SELECT DISTINCT
+		e.exp_id AS "expId",
+		e.exp_name AS "expName",
+		e.exp_update_date AS "expUpdateDate",
+		e.user_id AS "userId",
+		u.user_name AS "userName",
+		e.data_id AS "data.dataId",
+		p.feature_value AS "expParameter.algorithm"
+		FROM experiment e
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		LEFT JOIN user u ON u.user_id = e.user_id
+		WHERE p.feature_name = 'algorithm'
+		<if test="expClass != null and expClass != ''">
+			AND e.exp_class = #{expClass}
+		</if>
+		AND (e.user_id = #{userId} AND (e.authorized_user_id is null OR e.authorized_user_id = ''))
+		ORDER BY e.exp_update_date DESC
+	</select>
+
+    <insert id="insert">
+		INSERT INTO experiment(
+		  uuid,
+		  exp_id,
+		  exp_name,
+		  user_id,
+		  authorized_user_id,
+		  exp_class,
+		  data_id,
+		  exp_create_date,
+		  exp_update_date,
+		  exp_state,
+		  del_flag
+		) VALUES (
+		  #{UUID},
+		  #{expId},
+		  #{expName},
+		  #{userId},
+		  #{authorizedUserId},
+		  #{expClass},
+		  #{data.dataId},
+		  #{expCreateDate},
+		  #{expUpdateDate},
+		  #{expState},
+		  #{delFlag}
+		)
+	</insert>
+
+	<update id="update" parameterType="Experiment">
+		UPDATE experiment a SET
+			a.exp_id = #{expId},
+			a.exp_name = #{expName},
+			a.user_id = #{userId},
+			a.exp_class = #{expClass},
+			a.data_id = #{data.dataId},
+			a.exp_update_date = #{expUpdateDate},
+			a.exp_state = #{expState},
+			a.del_flag = #{delFlag}
+
+		  WHERE a.exp_id = #{expId}
+	</update>
+
+	<update id="updateExpname" parameterType="Experiment">
+		UPDATE experiment a SET
+			a.exp_name = #{expName}
+
+		  WHERE a.exp_id = #{expId}
+	</update>
+
+	<!--多表关联删除-->
+	<delete id="delete">
+		DELETE  a, p, r
+		FROM experiment a
+		LEFT JOIN exp_parameter p ON p.exp_id = a.exp_id
+		LEFT JOIN exp_result r ON r.exp_id = a.exp_id
+		WHERE a.exp_id = #{expId}
+		<if test="userId != null and userId != ''">
+			AND ((a.user_id = #{userId} AND (a.authorized_user_id is null OR a.authorized_user_id = ''))
+				OR a.authorized_user_id = #{userId})
+		</if>
+	</delete>
+	
+	<select id="getExperimentsByExpId" resultType="Experiment" parameterType="String">
+		SELECT
+		DISTINCT
+		<include refid="experimentColumns"></include>
+		from experiment a
+		where
+		a.exp_id = #{expId} AND (a.user_id = #{userId} OR a.authorized_user_id = #{userId})
+	</select>
+
+		
+	<select id="getLpUploadedDataList" resultType="UploadedData">
+	SELECT
+		(SELECT data_storage.data_name FROM data_storage WHERE data_storage.data_class = 'LP_Tdata' AND data_storage.data_id = d.data_id) lp_KnownResponse,
+		(SELECT data_storage.data_name FROM data_storage WHERE data_storage.data_class = 'LP_Sdata' AND data_storage.data_id = d.data_id) lp_Source,
+		d.upload_date uploadDate,
+		p.feature_value p2Predict,
+		d.data_id dataId
+		FROM data_storage d
+		LEFT JOIN experiment e ON e.data_id = d.data_id
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		WHERE p.feature_name = 'p2Predict' AND d.user_id = #{userId}
+		AND d.data_application_range = #{dataApplicationRange}
+		GROUP BY dataId,p2Predict
+		ORDER BY dataId DESC
+	</select>
+
+	<select id="getExpListWithAlgoUserName" resultType="Experiment">
+		SELECT
+		e.exp_id AS "expId",
+		e.exp_name AS "expName",
+		e.exp_class AS "expClass",
+		e.exp_create_date AS "expCreateDate",
+		e.exp_update_date AS "expUpdateDate",
+		p.feature_value AS "algorithm",
+		u.user_name AS "userName"
+		FROM experiment e
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		LEFT JOIN user u ON u.user_id = e.user_id
+		WHERE p.feature_name = 'algorithm'
+		<if test="expClass != null and expClass != ''">
+			AND e.exp_class = #{expClass}
+		</if>
+	</select>
+
+	<select id="expPSelectBySearchInfo" resultType="Experiment">
+		SELECT
+		e.exp_id AS "expId",
+		e.exp_name AS "expName",
+		e.exp_class AS "expClass",
+		p.feature_name AS "expParameter.featureName",
+		p.feature_value AS "expParameter.featureValue"
+		FROM experiment e
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		WHERE p.feature_value != null OR p.feature_value != ''
+		<if test="expName != null and expName != ''">
+			AND e.exp_name = #{expName}
+		</if>
+
+		<if test="expClass != null and expClass != ''">
+			AND e.exp_class = #{expClass}
+		</if>
+		<if test="expParameter.featureValue != null and expParameter.featureValue != ''">
+			AND p.feature_value = #{algorithm}
+		</if>
+	</select>
+
+	<select id="selectBySearchInfo" resultType="Experiment">
+		SELECT
+		e.exp_id AS "expId",
+		e.exp_name AS "expName",
+		e.exp_class AS "expClass",
+		e.exp_create_date AS "expCreateDate",
+		e.exp_update_date AS "expUpdateDate",
+		p.feature_value AS "algorithm",
+		u.user_name AS "userName"
+		FROM experiment e
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		LEFT JOIN user u ON u.user_id = e.user_id
+		WHERE p.feature_name = 'algorithm' AND (p.feature_value != null OR p.feature_value != '')
+		/*AND (e.user_id = #{userId} OR e.authorized_user_id = #{userId})*/
+		<if test="expName != null and expName != ''">
+			AND e.exp_name = #{expName}
+		</if>
+		<if test="expClass != null and expClass != ''">
+			AND e.exp_class = #{expClass}
+		</if>
+		<if test="userName != null and userName != ''">
+			AND u.user_name = #{userName}
+		</if>
+		<if test="algorithm != null and algorithm != ''">
+			AND p.feature_value = #{algorithm}
+		</if>
+	</select>
+
+
+
+	<!-- /////Annie写的/////////// -->
+	<select id="allExpP" resultType="Experiment">
+    	SELECT
+			e.exp_id AS "expId",
+			e.exp_name AS "expName",
+			e.exp_class AS "expClass",
+			p.feature_name AS "expParameter.featureName",
+			p.feature_value AS "expParameter.featureValue"
+		FROM experiment e
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		WHERE p.feature_value != null OR p.feature_value != ''
+    </select>
+
+	<!-- /////Annie写的/////////// -->
+	<select id="getExpPList" resultType="Experiment">
+		SELECT
+		e.exp_id AS "expId",
+		e.exp_name AS "expName",
+		e.exp_class AS "expClass",
+		p.feature_name AS "expParameter.featureName",
+		p.feature_value AS "expParameter.featureValue"
+		FROM experiment e
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		WHERE ((e.user_id = #{userId} AND (e.authorized_user_id is null OR e.authorized_user_id = '')) OR e.authorized_user_id = #{userId})
+		<if test="expName != null and expName != ''">
+			AND e.exp_name LIKE concat('%',#{expName},'%')
+		</if>
+		<if test="expClass != null and expClass != ''">
+			AND e.exp_class = #{expClass}
+		</if>
+		<if test="algorithm != null and algorithm != ''">
+			AND p.feature_value LIKE concat('%',#{algorithm},'%')
+		</if>
+		ORDER BY e.exp_update_date DESC
+
+	</select>
+
+
+	<select id="searchExpPList" resultType="Experiment">
+		SELECT
+		e.exp_id AS "expId",
+		e.exp_name AS "expName",
+		e.exp_class AS "expClass",
+		p.feature_name AS "expParameter.featureName",
+		p.feature_value AS "expParameter.featureValue"
+		FROM experiment e
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		WHERE ((e.user_id = #{userId} AND (e.authorized_user_id is null OR e.authorized_user_id = '')) OR e.authorized_user_id = #{userId})
+		<if test="expName != null and expName != ''">
+			AND e.exp_name LIKE concat('%',#{expName},'%')
+		</if>
+		<if test="expClass != null and expClass != ''">
+			AND e.exp_class = #{expClass}
+		</if>
+		<if test="algorithm != null and algorithm != ''">
+			AND p.feature_name = 'algorithm'
+			AND p.feature_value LIKE concat('%',#{algorithm},'%')
+		</if>
+		ORDER BY e.exp_update_date DESC
+	</select>
+
+	<select id="queryExpList" resultType="Experiment">
+		SELECT
+		e.exp_id AS "expId",
+		e.exp_name AS "expName",
+		e.exp_class AS "expClass",
+		e.exp_create_date AS "expCreateDate",
+		e.exp_update_date AS "expUpdateDate",
+		p.feature_value AS "algorithm",
+		u.user_name AS "userName"
+		FROM experiment e
+		LEFT JOIN exp_parameter p ON p.exp_id = e.exp_id
+		LEFT JOIN user u ON u.user_id = e.user_id
+		WHERE p.feature_name = 'algorithm'
+		AND ((e.user_id = #{userId} AND (e.authorized_user_id is null OR e.authorized_user_id = '')) OR e.authorized_user_id = #{userId})
+		<if test="expName != null and expName != ''">
+			AND e.exp_name LIKE concat('%',#{expName},'%')
+		</if>
+		<if test="expClass != null and expClass != ''">
+			AND e.exp_class = #{expClass}
+		</if>
+		<if test="userName != null and userName != ''">
+			AND u.user_name LIKE concat('%',#{userName},'%')
+		</if>
+		<if test="algorithm != null and algorithm != ''">
+			AND p.feature_value LIKE concat('%',#{algorithm},'%')
+		</if>
+		ORDER BY e.exp_update_date DESC
+	</select>
+
+	<update id="deleteDataInfoByUpdate" parameterType="java.lang.String">
+		UPDATE experiment a SET
+
+		a.data_id = ''
+
+	  	WHERE a.data_id = #{dataId}
+	</update>
+
+</mapper>

@@ -1,0 +1,100 @@
+@CHARSET "UTF-8";
+
+table.expTableforPara{
+	width:95%;
+	margin:0 auto;
+}
+.im{display:none;background:url("../image/north.png") no-repeat top;overflow: hidden;height: 100%;width: 100%;background-size:cover;}
+.im ul{
+	float:right;
+	margin-right: 10%;
+	margin-top: 10.1%;
+}
+.im p{
+	padding-bottom: 1%;
+}
+.im ul li{
+	padding-right: 25px;
+	list-style:none;
+	display: inline;
+}
+
+.im ul a{
+	padding-right: 15px;
+	color: rgba(255, 155, 0, 0.91);font-size: 16px;text-decoration:none;
+}
+
+.im ul label{
+	padding-right: 15px;
+	color: rgba(255, 155, 0, 0.91);font-size: 16px;text-decoration:none;
+}
+
+textarea {
+	border-radius:5px;
+	border:1px solid #c95c2957;
+	color:#ee8963;
+	height:140px;width: 75%;
+	font-size:14px;
+	overflow:hidden;
+	background-color: transparent;
+	resize: none;
+}
+
+.button-arrange {
+	position: absolute;
+	right:70px;
+	bottom: 35px;
+	text-align: right;
+}
+
+.button-arrange button{
+}
+
+.fileOne{
+	display: block;
+	position: relative;
+	width: 70px;
+	height: 20px;
+	overflow: hidden;
+	border: .1px solid #666;
+	background: none repeat scroll 0 0 #e5e5e5;
+	color: black;
+	cursor: pointer;
+	text-align: center;
+	text-decoration:none;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.fileUploadTable{
+	position:fixed;
+	margin-left: 0;
+}
+
+.fileUploadTable td{
+	font-size: 15px;
+	width:100px;
+	white-space: nowrap;
+}
+
+.fileUploadTable td span{
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+.fileUploadTable td label{
+	margin-left: 7px;
+	font-size: 13px;
+	width:60px;
+}
+
+.div-inline{
+	float:left;
+	vertical-align: center;
+}
+
+.div-inline a{
+	margin-left: 10px;
+	margin-top:226px;
+}
+

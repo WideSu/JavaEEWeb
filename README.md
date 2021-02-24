@@ -1,6 +1,6 @@
 # vibsignal_analysis
 
-This is a mechanical vibration signal analysis system, sponsored by the key projects of Quanzhou science and technology program.
+This is a mechanical vibration signal analysis system, sponsored by the key projects of Quanzhou city's science and technology program.
 
 
 ## The project's SSM architecture(Spring+SpringMVC+Mybatis） ##

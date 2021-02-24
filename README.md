@@ -1,16 +1,16 @@
 # vibsignal_analysis
 
-这是一个机械振动信号的分析系统。依托泉州市科技计划重点项目“”
+This is a mechanical vibration signal analysis system, sponsored by the key projects of Quanzhou science and technology program.
 
 
-## 项目的SSM架构(Spring+SpringMVC+Mybatis） ##
+## The project's SSM architecture(Spring+SpringMVC+Mybatis） ##
 - Maven
-- Spring（IOC DI AOP 声明式事务处理）
-- SpringMVC（支持Restful风格）
-- Hibernate Validate（参数校验）
-- Mybatis（最少配置方案）
-- [Druid（数据源配置 sql防注入 sql性能监控)](http://wosyingjun.iteye.com/blog/2306139)
-- 统一的异常处理
+- Spring（IOC DI AOP Declarative transaction processing）
+- SpringMVC（Restful API）
+- Hibernate Validate（Parameter verification）
+- Mybatis（Minimum configuration scheme）
+- [Druid（Data source configuration SQL | anti injection SQL | performance monitoring)](http://wosyingjun.iteye.com/blog/2306139)
+- Unified exception handling
 - JSP JSTL JavaScript
-- shiro权限控制
+- shiro Authority control
 - jQuery EasyUI

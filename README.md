@@ -13,4 +13,4 @@ This is a mechanical vibration signal analysis system, sponsored by the key proj
 - Unified exception handling
 - JSP JSTL JavaScript
 - shiro Authority control
-- jQuery EasyUI
+- Bootstrap

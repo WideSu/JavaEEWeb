@@ -1,6 +1,6 @@
 # vibsignal_analysis
 
-This is a research project I did with my Prof Li Haibo when I was a sophomore, specifically, a mechanical vibration signal analysis system, sponsored by the key projects of Quanzhou city's science and technology program.
+This is a production management ERP project I did with my Prof Li Haibo when I was a sophomore, specifically, a mechanical vibration signal analysis system, sponsored by the key projects of Quanzhou city's science and technology program. It includes 7 modules: planning progress, equipment management, process monitoring, material monitoring, personnel monitoring, quality control, system Management module.
 
 ## The project's SSM architecture(Spring+SpringMVC+Mybatis） ##
 - Maven

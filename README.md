@@ -145,3 +145,14 @@ $.ajaxSetup({
     }
 });
 ```
+For details about this part, please refer a blog: Using filter and global ajax events to realize shiro session expired login jump
+
+### Dynamic permission control
+This system adopts the classic permission model, namely RBAC (RoleBased Access Control) role-based access control, that is, users associate with permissions through roles. The model uses five tables: user table, role table, permission table, user role table, role permission table. Simply put, a user has several roles, and each role has several permissions. In this way, an authorization model of "user role authority" is constructed. In this model, there is a many-to-many relationship between users and roles, and between roles and permissions.
+
+The model can be simplified as the following figure:
+![image](https://user-images.githubusercontent.com/44923423/179390664-738e0236-4286-4615-8816-aac452f0c272.png)
+
+This system is based on the RBAC permission model and uses the shiro framework for permission control. Only users with the role of super administrator can manage the system permissions, and the permission level is refined to menu options.
+
+![image](https://user-images.githubusercontent.com/44923423/179390677-1eedcb74-3b70-439d-8c58-d7fe9865d51d.png)

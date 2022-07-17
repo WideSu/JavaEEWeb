@@ -66,3 +66,70 @@ The system uses the open source `KindEditor` rich text editor, which is a set of
 - Scalable: plug-in-based design, all functions are plug-ins, and functions can be increased or decreased according to needs 
 - Easy to change style: easy to modify the editor style, just modify one CSS file 
 - Compatible for major browsers: Support most major browsers, such as IE, Firefox, Safari, Chrome, Opera
+
+![image](https://user-images.githubusercontent.com/44923423/179390335-ad090db6-4ce8-4595-91f0-62d85b8d647a.png)
+
+### Related information
+
+The information of the associated object, click to display in the form of a pop-up window, if you have the modification permission corresponding to the module, you can also maintain the information here.
+
+![image](https://user-images.githubusercontent.com/44923423/179390372-31fc5018-e856-4f24-aafb-d1d1fa7e043c.png)
+
+### Search box
+
+You can select query conditions in the search box in the upper right corner and enter keywords to perform fuzzy search of corresponding information.
+
+![image](https://user-images.githubusercontent.com/44923423/179390389-705c591d-3294-4b30-94d2-769cbabde7ea.png)
+
+### Session expired jump to login
+
+After the user logs in, the corresponding session will be established. The default expiration time of the system is 10 minutes. If you need to change it, you can change the following configuration in the applicationContextshiro.xml configuration file.
+
+```{xml}
+<!-- 会话管理器 -->
+
+<bean id="sessionManager" class="org.apache.shiro.web.session.mgt.D
+
+efaultWebSessionManager"> <!-- session的失效时长，单位毫秒 ，这里设置为10分钟-->
+
+<property name="globalSessionTimeout" value="600000"/>
+
+<!-- 删除失效的session -->
+
+<property name="deleteInvalidSessions" value="true"/>
+
+<!-- 指定本系统sessionId, 默认为: JSESSIONID 问题: 与Servlet容器名冲 突, 如Jetty, Tomcat等默认JSESSIONID,
+
+当跳出shiro Servlet时如Error-page容器会为JSESSIONID重新分配值导致 登录会话丢失! -->
+
+<property name="sessionIdCookie" ref="sessionIdCookie"/>
+
+</bean>
+```
+
+If the session expires, you should jump to the login interface to log in again. The method adopted by the system is to set a session filter, as follows:
+```{java}
+public class SessionFilter implements Filter {
+
+public void doFilter(ServletRequest servletRequest, ServletResp onse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+
+HttpServletRequest request = (HttpServletRequest) servletRe
+
+quest;
+
+HttpServletResponse response = (HttpServletResponse) servle tResponse;
+
+if (!SecurityUtils.getSubject().isAuthenticated()) { //判断session里是否有用户信息,且是否为ajax请求，如果是ajax请求 响应头会有，x-requested-with if (request.getHeader("x-requested-with") != null && request.getHeader("x-requested-with").equals IgnoreCase("XMLHttpRequest")) { response.setHeader("session-status", "timeout");//在 响应头设置session状态 }
+
+}
+
+filterChain.doFilter(request, servletResponse);
+
+}
+
+@Override public void destroy() { // TODO Auto-generated method stub }
+
+@Override public void init(FilterConfig arg0) throws ServletException { // TODO Auto-generated method stub }
+
+}
+```

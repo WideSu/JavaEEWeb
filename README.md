@@ -109,27 +109,28 @@ efaultWebSessionManager"> <!-- session的失效时长，单位毫秒 ，这里�
 
 If the session expires, you should jump to the login interface to log in again. The method adopted by the system is to set a session filter, as follows:
 ```{java}
-public class SessionFilter implements Filter {
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-public void doFilter(ServletRequest servletRequest, ServletResp onse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+public class RegexMatches {
+    public static void main(String args[]) {
 
-HttpServletRequest request = (HttpServletRequest) servletRe
+        // String to be scanned to find the pattern.
+        String line = "This order was placed for QT3000! OK?";
+        String pattern = "(.*)(\\d+)(.*)";
 
-quest;
+        // Create a Pattern object
+        Pattern r = Pattern.compile(pattern);
 
-HttpServletResponse response = (HttpServletResponse) servle tResponse;
-
-if (!SecurityUtils.getSubject().isAuthenticated()) { //判断session里是否有用户信息,且是否为ajax请求，如果是ajax请求 响应头会有，x-requested-with if (request.getHeader("x-requested-with") != null && request.getHeader("x-requested-with").equals IgnoreCase("XMLHttpRequest")) { response.setHeader("session-status", "timeout");//在 响应头设置session状态 }
-
-}
-
-filterChain.doFilter(request, servletResponse);
-
-}
-
-@Override public void destroy() { // TODO Auto-generated method stub }
-
-@Override public void init(FilterConfig arg0) throws ServletException { // TODO Auto-generated method stub }
-
+        // Now create matcher object.
+        Matcher m = r.matcher(line);
+        if (m.find()) {
+            System.out.println("Found value: " + m.group(0));
+            System.out.println("Found value: " + m.group(1));
+            System.out.println("Found value: " + m.group(2));
+        } else {
+            System.out.println("NO MATCH");
+        }
+    }
 }
 ```

@@ -17,7 +17,7 @@ This is a production management ERP project sponsored by the key projects of Qua
 ## System structure
 ![image](https://user-images.githubusercontent.com/44923423/179386879-0af486cd-341b-4462-addd-fdb3d012bad9.png)
 
-## Database Design（详见sql文件）
+## Database Design
 ![image](https://user-images.githubusercontent.com/44923423/179386887-adf46196-62c2-44e4-bca2-732a390727ec.png)
 
 ## User Guide

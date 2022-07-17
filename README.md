@@ -1,4 +1,4 @@
-# vibsignal_analysis
+# Production ERP system
 
 This is a production management ERP project sponsored by the key projects of Quanzhou city's science and technology program. It includes 7 modules: planning progress, equipment management, process monitoring, material monitoring, personnel monitoring, quality control, system Management module.
 

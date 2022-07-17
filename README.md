@@ -127,3 +127,21 @@ public class RegexMatches {
     }
 }
 ```
+And configure the filter in web.xml. When the session expires, set the session state to timeout in the response header, and then use the global ajax event to judge the session state and jump to the login page. The event is defined in common.js as follows:
+
+```{javascript}
+//全局ajax事件，处理session过期跳转登录
+$.ajaxSetup({
+    complete: function(XMLHttpRequest, sessionStatus) {
+        var sessionstatus = XMLHttpRequest.getResponseHeader("sessi on-status");
+
+        if (sessionstatus == "timeout") {
+            $.messager.alert('提示信息', "登录超时！请重新登录！", 'inf o', function() {
+                window.location.href = 'login';
+            });
+
+        }
+
+    }
+});
+```

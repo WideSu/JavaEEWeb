@@ -44,7 +44,7 @@ For the configuration of image upload, please refer to the notes at the end of t
 
 The file upload uses an open source jQuery file upload plug-in. You can modify the parameters of the uploaded file in common.js, including the number of uploads, the supported file types, etc. The configuration information is as follows:
 
-```{python}
+```{java}
 url:"file/upload", 
 maxFileCount: 5, //上传文件个数（多个时修改此处 
 returnType: 'json', //服务返回数据 
@@ -86,24 +86,17 @@ You can select query conditions in the search box in the upper right corner and 
 After the user logs in, the corresponding session will be established. The default expiration time of the system is 10 minutes. If you need to change it, you can change the following configuration in the applicationContextshiro.xml configuration file.
 
 ```{xml}
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 会话管理器 -->
-
-<bean id="sessionManager" class="org.apache.shiro.web.session.mgt.D
-
-efaultWebSessionManager"> <!-- session的失效时长，单位毫秒 ，这里设置为10分钟-->
-
-<property name="globalSessionTimeout" value="600000"/>
-
-<!-- 删除失效的session -->
-
-<property name="deleteInvalidSessions" value="true"/>
-
-<!-- 指定本系统sessionId, 默认为: JSESSIONID 问题: 与Servlet容器名冲 突, 如Jetty, Tomcat等默认JSESSIONID,
+<bean id="sessionManager" class="org.apache.shiro.web.session.mgt.D  efaultWebSessionManager">
+   <!-- session的失效时长，单位毫秒 ，这里设置为10分钟-->
+   <property name="globalSessionTimeout" value="600000" />
+   <!-- 删除失效的session -->
+   <property name="deleteInvalidSessions" value="true" />
+   <!-- 指定本系统sessionId, 默认为: JSESSIONID 问题: 与Servlet容器名冲 突, 如Jetty, Tomcat等默认JSESSIONID,
 
 当跳出shiro Servlet时如Error-page容器会为JSESSIONID重新分配值导致 登录会话丢失! -->
-
-<property name="sessionIdCookie" ref="sessionIdCookie"/>
-
+   <property name="sessionIdCookie" ref="sessionIdCookie" />
 </bean>
 ```
 

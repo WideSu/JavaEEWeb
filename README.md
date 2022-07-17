@@ -60,6 +60,9 @@ The system uses the open source `KindEditor` rich text editor, which is a set of
 
 **KindEditor main features:**
 
-- Fast: small size, fast loading speed 
-- Open source: open source, high level, high quality 
-- Bottom layer: built-in custom DOM class library, precise operation of DOM extension: plug-in-based design, all functions are plug-ins, and functions can be increased or decreased according to needs Style: It is very easy to modify the editor style, just modify one CSS file Compatible: Support most major browsers, such as IE, Firefox, Safari, Chrome, Opera
+- Fast: small in size and fast to load 
+- Open source
+- Easy to customize: built-in custom DOM class library, precise operation of DOM 
+- Scalable: plug-in-based design, all functions are plug-ins, and functions can be increased or decreased according to needs 
+- Style: It is very easy to modify the editor style, just modify one CSS file 
+- Compatible : Support most major browsers, such as IE, Firefox, Safari, Chrome, Opera

@@ -1,7 +1,6 @@
 # vibsignal_analysis
 
-This is a mechanical vibration signal analysis system, sponsored by the key projects of Quanzhou city's science and technology program.
-
+This is a research project I did with my Prof Li Haibo when I was a sophomore, specifically, a mechanical vibration signal analysis system, sponsored by the key projects of Quanzhou city's science and technology program.
 
 ## The project's SSM architecture(Spring+SpringMVC+Mybatis） ##
 - Maven

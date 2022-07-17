@@ -52,5 +52,14 @@ allowedTypes: 'doc,docx,excel,sql,txt,ppt,pdf', //允许上传的文件式
 showDone: false, //是否显示"Done"(完成)按钮 
 showDelete: true, //是否显示"Delete"(删除)按钮
 ```
+![image](https://user-images.githubusercontent.com/44923423/179387111-140e17eb-a630-4fb4-8206-f3c16da0a625.png)
 
+### Rich text editing
 
+The system uses the open source `KindEditor` rich text editor, which is a set of online HTML editors, mainly used to allow users to obtain WYSIWYG editing effects on the website. KindEditor replaces the traditional multi-line text input box (textarea) with a visual rich text input box.
+
+**KindEditor main features:**
+
+- Fast: small size, fast loading speed 
+- Open source: open source, high level, high quality 
+- Bottom layer: built-in custom DOM class library, precise operation of DOM extension: plug-in-based design, all functions are plug-ins, and functions can be increased or decreased according to needs Style: It is very easy to modify the editor style, just modify one CSS file Compatible: Support most major browsers, such as IE, Firefox, Safari, Chrome, Opera

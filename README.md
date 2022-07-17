@@ -45,7 +45,12 @@ For the configuration of image upload, please refer to the notes at the end of t
 The file upload uses an open source jQuery file upload plug-in. You can modify the parameters of the uploaded file in common.js, including the number of uploads, the supported file types, etc. The configuration information is as follows:
 
 ```{python}
-url:"file/upload", maxFileCount: 5, //上传文件个数（多个时修改此处 returnType: 'json', //服务返回数据 allowedTypes: 'doc,docx,excel,sql,txt,ppt,pdf', //允许上传的文件式 showDone: false, //是否显示"Done"(完成)按钮 showDelete: true, //是否显示"Delete"(删除)按钮
+url:"file/upload", 
+maxFileCount: 5, //上传文件个数（多个时修改此处 
+returnType: 'json', //服务返回数据 
+allowedTypes: 'doc,docx,excel,sql,txt,ppt,pdf', //允许上传的文件式 
+showDone: false, //是否显示"Done"(完成)按钮 
+showDelete: true, //是否显示"Delete"(删除)按钮
 ```
 
 
